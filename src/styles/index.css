@@ -1,0 +1,11 @@
+.header{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.main-menu{
+    list-style: none;
+    display: flex;
+}

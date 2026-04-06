@@ -80,7 +80,6 @@ body{
     margin-bottom: .5em;
 }
 
-
 .projects-section__menu{
     display: flex;
     justify-content: space-evenly;
@@ -116,4 +115,11 @@ body{
     align-items: center;
 }
 
+.footer{
+    border: var(--border);
+    padding: 1em;
+    display: grid;
+    place-items: center;
+
+}
 

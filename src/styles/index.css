@@ -64,6 +64,7 @@ body{
 }
 
 .main-content{
+    margin: 1em 0;
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 1em;
@@ -72,8 +73,9 @@ body{
 [class$='section']{
     display: flex;
     flex-direction: column;
-    gap: 5%;  
+    gap: 1em;  
     padding: .5em;
+    margin: 1em 0;
 }
 
 [class*=title]{
@@ -116,10 +118,43 @@ body{
 }
 
 .footer{
-    border: var(--border);
+    text-align: center;
     padding: 1em;
     display: grid;
     place-items: center;
+    gap: 1em;
+}
+
+.contact-section{
+    width: 100%;
+}
+.contact-section__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.contact-section__link{
+    color: currentColor;
+     --dimensions: 8em;
+    width:  var(--dimensions);
+    height: var(--dimensions);
+    border-radius: 100%;
+    background-size: auto;
+}
+.contact-section__link:hover{
+    box-shadow: 5px 5px 0px;
+    transition: .2s;
+}
+
+.contact-section__link--github{
+    background-image: url(/assets/icons/github-icon.svg);
 
 }
+
+.contact-section__link--gmail{
+    background-image: url(/assets/icons/mail-icon.svg);
+}
+
 

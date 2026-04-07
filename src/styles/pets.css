@@ -1,0 +1,79 @@
+:root{
+     --border: 1px solid;
+}
+
+.header{
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.main-title{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header__link{
+    text-decoration: none;
+    color: currentColor;
+    border-radius: 100%;
+    --dimensions: 2.5em;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    background-image: url(../../assets/icons/arrow-back.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #444;
+}
+
+.header__link:hover{
+    transform: scale(1.1);
+    background-color: #544;
+    transition: .2s;
+}
+
+
+.main-content{
+    padding: 1.5em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, min-content) );
+    grid-gap: 2em;
+}
+
+.main-gallery__container{
+    height: fit-content;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+
+}
+
+.main-gallery__img{
+    border-radius: 1em;
+}
+
+.main-gallery__img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px;
+    transition: .3s;
+}
+
+.footer{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+   

@@ -1,18 +1,20 @@
-*{
+* {
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    box-sizing: border-box;
+    ;
 }
-:root{
+
+:root {
     --border: 1px solid;
     color-scheme: light dark;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
 }
 
-body{
+body {
     /* background-color: light-dark(#ffffff, #1a1a1a);
     color: light-dark(#333333, #f0f0f0); */
-    background-image: radial-gradient( hsl(190, 50%, 40%), hsl(200, 100%, 40%));
+    background-image: radial-gradient(hsl(190, 50%, 40%), hsl(200, 100%, 40%));
     background-repeat: no-repeat;
 }
-

@@ -43,13 +43,14 @@ body{
 }
 
 .main-menu__item{
+    padding: 0 .3em;
+    margin: .3em 0;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1em;
     overflow: hidden;
-    padding: 0 .3em;
-    height: 40%;
 }
 
 .main-menu__link{
@@ -74,16 +75,16 @@ body{
     gap: 1em;
 }
 
+[class*=title]{
+    margin-bottom: .5em;
+}
+
 [class$='section']{
     display: flex;
     flex-direction: column;
     gap: 1em;  
     padding: .5em;
     margin: 1em 0;
-}
-
-[class*=title]{
-    margin-bottom: .5em;
 }
 
 .projects-section__menu{
@@ -94,6 +95,7 @@ body{
     height: 80%;
     list-style: none;
 }
+
 .projects-section__item{
     border-radius: 100%;
     overflow: hidden;
@@ -103,11 +105,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.projects-section__item:hover{
-    box-shadow: 5px 5px 0px;
-    transition: .2s;
 }
 
 .projects-section__link{
@@ -132,6 +129,7 @@ body{
 .contact-section{
     width: 100%;
 }
+
 .contact-section__container{
     display: flex;
     justify-content: space-evenly;
@@ -147,9 +145,11 @@ body{
     border-radius: 100%;
     background-size: auto;
 }
-.contact-section__link:hover{
+
+.projects-section__item:hover, .contact-section__link:hover{
+    transform: translateZ(45px);
     box-shadow: 5px 5px 0px;
-    transition: .2s;
+    transition: .4s;
 }
 
 .contact-section__link--github{

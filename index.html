@@ -13,28 +13,42 @@
 <body>
     <!-- the header contains my name and a navigation bar -->
     <header class="header">
-        <div class="main-container">
+        <div class="header__container-icons">
+                <a href="#" target="_blank" class="header__link header__link--gmail">
+                    <img src="/public/icons/mail-icon.svg" alt="Email icon">
+                </a>
+                <a href="https://github.com/Emanuel1102" target="_blank" class="header__link header__link--github">
+                    <img src="/public/icons/github-icon.svg" alt="Github icon">
+                </a>
+            </div>
+        <div class="header__container">
             <span>Hello, my name's</span>
-            <h1 class="main-title">Emanuel Manotas</h1>
+            <h1 class="header__title">Emanuel Manotas</h1>
         </div>
-        <nav class="main-navigation-bar">
-            <ul class="main-menu">
-                <li class="main-menu__item">
-                    <a href="#about-me" class="main-menu__link">About me</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#projects" class="main-menu__link">Projects</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#contact" class="main-menu__link">Contact</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="/src/views/pets.html" class="main-menu__link">Pets</a>
-                </li>
-            </ul>
-        </nav>
     </header>
-    <hr style="width: 80%; margin: 0 auto">
+    <nav class="main-bar">
+        <div class="main-bar__container">
+            <img src="/public/images/image.png" alt="beast mode" class="main-bar__image">
+        </div>        
+        <ul class="main-menu">
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Home</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#about-me" class="main-menu__link">About me</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#projects" class="main-menu__link">Projects</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#contact" class="main-menu__link">Contact</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="/src/views/pets.html" class="main-menu__link">Pets</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
 
     <!-- the main content is built by 3 sections, each one contains a title that describes -->
     <main class="main-content">
@@ -69,16 +83,14 @@
             </ul>
         </section>
     </main>
-    <hr style="width: 80%; margin: 0 auto">
+    <hr>
 
     <!-- the footer contains a contact -->
     <footer class="footer">
         <section class="contact-section" id="contact">
             <h2 class="contact-section__title">Contact</h2>
-            <div class="contact-section__container">
-                <a href="#" target="_blank" class="contact-section__link contact-section__link--gmail"></a>
-                <a href="https://github.com/Emanuel1102" target="_blank" class="contact-section__link contact-section__link--github"></a>
-            </div>
+            
+            
         </section>
         <b>
             <i>Riwi 2026</i>

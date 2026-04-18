@@ -1,44 +1,107 @@
 :root{
     --border: 1px solid;
+    --cyan: #00ffff;
+    --color-hover-and-nav: #005f73;
+    --box-shadow: 10px 10px 0px var(--color-hover-and-nav);
+    --transition: .4s;
+    --height-bar: 8em;
 }
 
 html{
     min-height: 100vh;
-
+    scroll-behavior: smooth;
 }
 
 body{
     height: 100%;
+    &::selection{
+        background-color: #fff;
+        color: #009ee8;
+    }
 }   
 
 
 .header{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     gap: .5em;
     flex-wrap: wrap;
     padding: 1em 3em;
+    height: 100vh;
+    background-image: radial-gradient(transparent, #01121a), url(/public/images/atom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.main-title{
-    font-size: 3em;
-    text-align: center;
+
+.header__title{
+    font-size: 5rem;
+    text-shadow: 0 0 10px black;
+    color: var(--cyan);
 }
 
-.main-navigation-bar{
-    width: auto;
-    flex-grow: .5;
+.header__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
+}
+
+.header__container span{
+    text-shadow: 0 0 5px var(--cyan);
+    font-size: 2.5em;
+}
+
+.header__container-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.header__link{
+    --dimensions: 4.5em;
+    height: var(--dimensions);
+    width: var(--dimensions);
+    filter: drop-shadow(0 0 5px);
+    color: currentColor;
+    transition: var(--transition);
+}
+
+.header__link:hover{
+    color: var(--cyan);
+}
+
+.main-bar{
+    height: var(--height-bar);
+    padding: 1em;
+    background-image: linear-gradient(to top, transparent ,  var(--color-hover-and-nav) );
+    /* filter: blur(10px); */
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    position: sticky;
+    top: 0%;
+}
+
+.main-bar__container{
+    border-radius: 100%;
+    overflow: hidden;
+    outline: .5em solid var(--color-hover-and-nav);
+}
+
+.main-bar__image{
+    max-height: 100%;
+    width: auto;
 }
 
 .main-menu{
-    width: 100%;
-    height: 100%;
     list-style: none;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 1em;
@@ -53,6 +116,27 @@ body{
     align-items: center;
     border-radius: 1em;
     overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+}
+
+.main-menu__item::after{
+    content: '';
+    background-color: var(--color-hover-and-nav);
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    transition: var(--transition);
+}
+
+.main-menu__item:hover::after{
+    height: 100%;
+}
+
+.main-menu__item:hover{
+    box-shadow: var(--box-shadow);
 }
 
 .main-menu__link{
@@ -62,19 +146,11 @@ body{
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: currentColor;
-}
-
-.main-menu__item:hover{
-    box-shadow: 5px 5px 0px ;
-    transition: .2s;
+    color: var(--cyan);
 }
 
 .main-content{
     margin: 1em 0;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 1em;
 }
 
 [class*=title]{
@@ -87,7 +163,9 @@ body{
     gap: 1em;  
     padding: 1em 2em;
     margin: 1em 0;
+    padding-top: calc(var(--height-bar) + 2em);
 }
+
 
 .projects-section__menu{
     display: grid;
@@ -132,35 +210,8 @@ body{
     width: 100%;
 }
 
-.contact-section__container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 2em;
+.projects-section__item:hover{
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
 }
-
-.contact-section__link{
-    color: currentColor;
-     --dimensions: 8em;
-    width:  var(--dimensions);
-    height: var(--dimensions);
-    border-radius: 100%;
-    background-size: auto;
-}
-
-.projects-section__item:hover, .contact-section__link:hover{
-    transform: translateZ(45px);
-    box-shadow: 5px 5px 0px;
-    transition: .4s;
-}
-
-.contact-section__link--github{
-    background-image: url(/public/icons/github-icon.svg);
-
-}
-
-.contact-section__link--gmail{
-    background-image: url(/public/icons/mail-icon.svg);
-}
-
 

@@ -1,6 +1,6 @@
 :root{
      --border: 1px solid;
-    }
+}
     
 html{
     min-height: 100vh;
@@ -53,7 +53,7 @@ body{
 
 .main-gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, min-content) );
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
     grid-gap: 2em;
 }
 

@@ -8,12 +8,28 @@
     --border: 1px solid;
     color-scheme: light dark;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.4em;
+    --bg-color: #01121a;
+    --color-titles: rgb(9 147 150);
+    --text-color: #ffffff;
+    --bg-header: #01121a;
 }
 
 body {
-    /* background-color: light-dark(#ffffff, #1a1a1a);
-    color: light-dark(#333333, #f0f0f0); */
-    background-image: radial-gradient(hsl(190, 50%, 40%), hsl(200, 100%, 40%));
-    background-repeat: no-repeat;
+    background-color: var(--bg-color);
+    color: var(--text-color)
+} 
+
+.header{
+    background-image: linear-gradient(to top, transparent, var(--bg-header));
+}
+
+hr{
+    border-color: var(--text-color);
+    width: 80%;
+    margin: 0 auto;
+}
+
+[class*=title]{
+    color: var(--color-titles);
 }

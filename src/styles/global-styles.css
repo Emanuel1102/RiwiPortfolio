@@ -10,9 +10,13 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     --bg-color: #01121a;
-    --color-titles: rgb(9 147 150);
+    --color-titles: #099396;
+    --color-main-titles: #00ffff;
     --text-color: #ffffff;
+    --links-color: #00ffff;
     --bg-header: #01121a;
+    --color-hover-and-nav: #005f73;
+
 }
 
 body {
@@ -20,9 +24,6 @@ body {
     color: var(--text-color)
 } 
 
-.header{
-    background-image: linear-gradient(to top, transparent, var(--bg-header));
-}
 
 hr{
     border-color: var(--text-color);
@@ -30,6 +31,6 @@ hr{
     margin: 0 auto;
 }
 
-[class*=title]{
+[class*=title]:not(.header__title){
     color: var(--color-titles);
 }

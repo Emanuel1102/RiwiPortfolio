@@ -1,6 +1,7 @@
+@import url(global-styles.css);
+
 :root{
     --border: 1px solid;
-    --cyan: #00ffff;
     --color-hover-and-nav: #005f73;
     --box-shadow: 10px 10px 0px var(--color-hover-and-nav);
     --transition: .4s;
@@ -20,8 +21,9 @@ body{
     }
 }   
 
+/* --------------------- header styles--------------------------- */
 
-.header{
+/* .header{
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -71,19 +73,21 @@ body{
 
 .header__link:hover{
     color: var(--cyan);
-}
+} */
+
+/* ---------------------bar styles--------------------------- */
 
 .main-bar{
     height: var(--height-bar);
     padding: 1em;
     background-image: linear-gradient(to top, transparent ,  var(--color-hover-and-nav) );
-    /* filter: blur(10px); */
     box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     gap: 1em;
     position: sticky;
     top: 0%;
+    backdrop-filter: blur(10px);
 }
 
 .main-bar__container{
@@ -146,12 +150,15 @@ body{
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: var(--cyan);
+    color: var(--links-color);
 }
 
 .main-content{
     margin: 1em 0;
 }
+
+/* --------------------- section styles--------------------------- */
+
 
 [class*=title]{
     margin-bottom: .5em;
@@ -163,7 +170,8 @@ body{
     gap: 1em;  
     padding: 1em 2em;
     margin: 1em 0;
-    padding-top: calc(var(--height-bar) + 2em);
+    /* padding-top: calc(var(--height-bar) + 2em); */
+    scroll-margin-top: calc(var(--height-bar) + 2em);
 }
 
 
@@ -197,6 +205,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/* --------------------- footer styles--------------------------- */
+
 
 .footer{
     text-align: center;

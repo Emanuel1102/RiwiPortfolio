@@ -3,16 +3,6 @@
 :root{
      --border: 1px solid;
 }
-    
-html{
-    min-height: 100vh;
-
-}
-
-body{
-    height: 100%;
-}
-
 
 .header{
     padding: 3em 1.5em;
@@ -24,7 +14,7 @@ body{
     font-size: 3em;
     flex-grow: 1;
     text-align: center;
-    color: var(--color-main-titles);
+    color: var(--secondary-color);
 }
 
 .header__link{
@@ -41,7 +31,7 @@ body{
 
 .header__link:hover{
     transform: scale(1.1);
-    background-color: var(--color-hover-and-nav);
+    background-color: var(--interaction-color);
 }
 
 .main-content{
@@ -77,7 +67,7 @@ body{
 
 .main-gallery__img:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px var(--color-hover-and-nav);
+    box-shadow: 0px 0px 10px var(--interaction-color);
 }
 
 .footer{

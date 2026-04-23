@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     padding: 1em 3em;
     height: 100vh;
-    background-image: radial-gradient(transparent, var(--bg-header)), url(/public/images/atom.png);
+    background-image: radial-gradient(transparent, var(--primary-color)), url(/public/images/atom.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
 .header__title{
     font-size: 5rem;
     text-shadow: 0 0 10px black;
-    color: var(--color-main-titles);
+    color: var(--secondary-color);
 }
 
 .header__container {
@@ -29,7 +29,7 @@
 }
 
 .header__container span{
-    text-shadow: 0 0 5px var(--cyan);
+    text-shadow: 0 0 5px var(--secondary-color);
     font-size: 2.5em;
 }
 
@@ -49,5 +49,5 @@
 }
 
 .header__link:hover{
-    color: var(--cyan);
+    color: var(--secondary-color);
 }

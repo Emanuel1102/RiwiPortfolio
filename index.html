@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a page practice to have a bases to create my portfolio">
-    <!-- <link rel="stylesheet" href="src/styles/global-styles.css"> -->
-    <link rel="stylesheet" href="src/styles/header-index.css">
-    <link rel="stylesheet" href="src/styles/main-index.css">
-    <link rel="stylesheet" href="./src/styles/footer-index.css">
     <link rel="stylesheet" href="src/styles/index.css">
     <title>Portfolio</title>
 </head>
@@ -50,6 +46,7 @@
                 <a href="/src/views/pets.html" class="main-menu__link">Pets</a>
             </li>
         </ul>
+        <button id="menu-toggle">☰</button>
     </nav>
     <hr>
 
@@ -73,18 +70,30 @@
 
         <section class="projects-section" id="projects">
             <h2 class="projects-section__title">Projects</h2>
-            <ul class="projects-section__menu">
-                <li class="projects-section__item">
-                    <!-- tarjeta debe tener imagen y descripcion, el enlace lleva al repsitorio-->
-                    <a href="#" class="projects-section__link">project</a>
-                </li>
-                <li class="projects-section__item">
-                    <a href="#" class="projects-section__link">project</a>
-                </li>
-                <li class="projects-section__item">
-                    <a href="#" class="projects-section__link">project</a>
-                </li>
-            </ul>
+            <div class="projects-section__container">
+                <article class="projects-section__card">
+                    <img src="" alt="project image" class="projects-section__img">
+
+                    <div class="projects-section__div">
+                        <p class="projects-section__description">descripcion del proyecto</p>
+                        <a href="#" class="projects-section__link"></a>
+                    </div>
+                </article>
+                <article class="projects-section__card">
+                    <img src="" alt="project image" class="projects-section__img">
+                    <div class="projects-section__div">
+                        <p class="projects-section__description">descripcion del proyecto</p>
+                        <a href="#" class="projects-section__link"></a>
+                    </div>
+                </article>
+                <article class="projects-section__card">
+                    <img src="" alt="project image" class="projects-section__img">
+                    <div class="projects-section__div">
+                        <p class="projects-section__description">descripcion del proyecto</p>
+                        <a href="#" class="projects-section__link"></a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <hr>
@@ -100,11 +109,12 @@
 
                 <textarea required placeholder="Escribe un mensaje" id="message" class="contact-form__input"></textarea>
 
-                <button class="contact-form__input contact-form__input--submit" type="submit">Vamos a ello</button>
+                <button class="contact-form__input contact-form__input--submit" type="submit">Enviar</button>
             </form>            
         </section>
     </footer>
 
+    <script src="./src/scripts/nav.js"></script>
 </body>
 
 </html>

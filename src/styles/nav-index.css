@@ -1,0 +1,122 @@
+/* ---------------------bar styles--------------------------- */
+
+.main-bar{
+    height: var(--height-bar);
+    padding: 1em;
+    background-image: linear-gradient(to top, transparent ,  var(--interaction-color) );
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    position: sticky;
+    top: 0%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.main-bar__container{
+    border-radius: 100%;
+    overflow: hidden;
+    outline: .5em solid var(--interaction-color);
+}
+
+.main-bar__image{
+    max-height: 100%;
+    width: auto;
+}
+
+.main-menu{
+    padding: 1em;
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.main-menu__item{
+    padding: 0 .3em;
+    margin: .3em 0;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+}
+
+.main-menu__item::after{
+    content: '';
+    background-color: var(--interaction-color);
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    transition: var(--transition);
+}
+
+.main-menu__item:hover::after{
+    height: 100%;
+}
+
+.main-menu__item:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.main-menu__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* ---------------------button menu styles--------------------------- */
+
+#menu-toggle{
+    align-self: center;
+    padding: .5em;
+    font-size: 1em;
+    border-radius: var(--radius);
+    border-color: transparent;
+    cursor: pointer;
+    border-style: solid;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+    display: none;
+}
+
+#menu-toggle:active{
+    background-color: var(--interaction-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+@media (max-width: 850px){
+    .main-menu{
+        background-color: var(--interaction-color);
+        border-radius: var(--radius);
+        box-shadow:  0 0 10px var(--primary-color);
+        position: fixed;
+        flex-direction: column;
+        right: 1%;
+        top: var(--height-bar);
+        display: none;
+    }
+
+    #menu-toggle{
+        display: block;
+    }
+
+    .active{
+        display: flex;
+    }
+}

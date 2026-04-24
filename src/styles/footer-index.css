@@ -18,7 +18,6 @@
 
 .contact-form__input:not(.contact-form__input--submit){
     width: 30%;
-    text-shadow: 0 0 5px var(--primary-color);
 }
 
 .contact-form__input{
@@ -58,3 +57,10 @@
     resize: none;
     scrollbar-color: var(--secondary-color) transparent;
 }
+
+@media (max-width: 950px){
+    .contact-form__input:not(.contact-form__input--submit){
+        width: 80%;
+    }
+}
+

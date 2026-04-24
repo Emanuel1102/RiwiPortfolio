@@ -4,8 +4,8 @@
     flex-direction: column;
     gap: .5em;
     flex-wrap: wrap;
-    padding: 1em 3em;
-    height: 100vh;
+    padding: 3em;
+    min-height: 100vh;
     background-image: radial-gradient(transparent, var(--primary-color)), url(/public/images/atom.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,11 +24,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1em;
     flex-grow: 1;
 }
 
 .header__container span{
     text-shadow: 0 0 10px var(--primary-color);
+    font-weight: bolder;
     font-size: 2.5em;
 }
 
@@ -50,3 +52,18 @@
 .header__link:hover{
     color: var(--secondary-color);
 }
+
+@media (max-width: 850px){
+    .header__title{
+        font-size: 3em;
+    }
+
+    .header__container span{
+        font-size: 1.5em;
+    }
+
+    .header__link{
+        --dimensions: 4em;
+    }
+}
+

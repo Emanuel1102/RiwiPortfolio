@@ -13,9 +13,9 @@
     --secondary-color: #00ffff;
     --tertiary-color: #099396;
     --interaction-color: #005f73;
-    --box-shadow: 10px 10px 0px var(--interaction-color);
-
-
+    --box-shadow: 10px 10px 5px var(--interaction-color);
+    --transition: .4s;
+    --radius: 1em
 }
 
 body {
@@ -36,4 +36,5 @@ hr{
 
 [class*=title]:not(.header__title){
     color: var(--tertiary-color);
+    margin-bottom: .5em;
 }

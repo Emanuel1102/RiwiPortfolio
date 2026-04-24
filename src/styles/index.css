@@ -1,8 +1,6 @@
 @import url(global-styles.css);
 
 :root{
-    --border: 1px solid;
-    --transition: .4s;
     --height-bar: 8em;
 }
 
@@ -88,16 +86,8 @@ html{
     color: var(--secondary-color);
 }
 
-.main-content{
-    margin: 1em 0;
-}
 
 /* --------------------- section styles--------------------------- */
-
-
-[class*=title]{
-    margin-bottom: .5em;
-}
 
 [class$='section']{
     display: flex;
@@ -108,42 +98,5 @@ html{
     scroll-margin-top: calc(var(--height-bar) + 2em);
 }
 
-
-.projects-section__menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-items: center;
-    justify-content: center;
-    gap: 1em;
-    list-style: none;
-}
-
-.projects-section__item{
-    border-radius: 100%;
-    overflow: hidden;
-    --dimensions: 8em;
-    width:  var(--dimensions);
-    height: var(--dimensions);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects-section__item:hover{
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-}
-
-
-.projects-section__link{
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: currentColor;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 

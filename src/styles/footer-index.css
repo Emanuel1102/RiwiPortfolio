@@ -1,9 +1,60 @@
-@import url(./global-styles.css);
 
 .footer{
     padding: 1em;
 }
 
-.contact-section{
-    border: var(--border);
+.contact-section__title{
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: .5em;
+}
+
+.contact-form__input:not(.contact-form__input--submit){
+    width: 30%;
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+.contact-form__input{
+    text-align: center;
+    padding: 1em;
+    background-color: var(--tertiary-color);
+    border: none;
+    border-bottom: var(--border) transparent;
+    transition: var(--transition);
+    border-radius: var(--radius);
+}
+
+.contact-form__input:focus, .contact-form__input--submit:hover{
+    box-shadow: var(--box-shadow);
+    background-color: var(--interaction-color);
+    color: var(--secondary-color);
+    border-color: initial;
+    outline: none;
+    transform: translateY(-5px) 
+}
+
+.contact-form__input::placeholder{
+    color: var(--primary-color);
+    text-shadow: 1px 1px 1px var(--secondary-color);
+    font-weight: bolder;
+}
+
+.contact-form__input--submit{
+    color: var(--primary-color);
+    cursor: pointer;
+    align-self: center;
+
+}
+
+#message{
+    height: 10em;
+    resize: none;
+    scrollbar-color: var(--secondary-color) transparent;
 }

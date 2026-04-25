@@ -2,6 +2,7 @@
 
 :root{
      --border: 1px solid;
+     --container-width: 14em;
 }
 
 .header{
@@ -26,7 +27,7 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: var(--tertiary-color);
-    transition: .2s;
+    transition: var(--transition);
 }
 
 .header__link:hover{
@@ -44,25 +45,29 @@
 
 .main-gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(var(--container-width), 1fr) );
     grid-gap: 2em;
 }
 
 .main-gallery__container{
     border-radius: 1em;
-    height: fit-content;
     background-color: hsl(180, 20%, 50%);
     color: hsl(180, 100%, 10%); 
+    height: fit-content;
     text-align: center;
     padding: 1em;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
     gap: 1.5em;
 }
 
 .main-gallery__img{
+    max-width: 100%;
+    max-height: 50%;
     border-radius: 1em;
-    transition: .3s;
+    transition: var(--transition);
 }
 
 .main-gallery__img:hover{

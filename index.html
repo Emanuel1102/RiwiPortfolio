@@ -10,18 +10,14 @@
 </head>
 
 <body>
-    <!-- the header contains my name and a navigation bar -->
     <header class="header">
         <div class="header__container-icons">
-                <a href="#" target="_blank" class="header__link header__link--gmail">
-                    <img src="/public/icons/mail-icon.svg" alt="Email icon">
-                </a>
-                <a href="https://github.com/Emanuel1102" target="_blank" class="header__link header__link--github">
-                    <img src="/public/icons/github-icon.svg" alt="Github icon">
-                </a>
-            </div>
+            <a href="https://github.com/Emanuel1102" target="_blank" class="header__link header__link--github">
+                <img src="/public/icons/github-icon.svg" alt="Github icon">
+            </a>
+        </div>
         <div class="header__container">
-            <span>Hello, my name's</span>
+            <span>Hola, mi nombre es</span>
             <h1 class="header__title">Emanuel Manotas</h1>
         </div>
     </header>
@@ -31,16 +27,16 @@
         </div>        
         <ul class="main-menu">
             <li class="main-menu__item">
-                <a href="#" class="main-menu__link">Home</a>
+                <a href="#" class="main-menu__link">Inicio</a>
             </li>
             <li class="main-menu__item">
-                <a href="#about-me" class="main-menu__link">About me</a>
+                <a href="#about-me" class="main-menu__link">Sobre mi</a>
             </li>
             <li class="main-menu__item">
-                <a href="#projects" class="main-menu__link">Projects</a>
+                <a href="#projects" class="main-menu__link">Proyectos</a>
             </li>
             <li class="main-menu__item">
-                <a href="#contact" class="main-menu__link">Contact</a>
+                <a href="#contact" class="main-menu__link">Contacto</a>
             </li>
             <li class="main-menu__item">
                 <a href="/src/views/pets.html" class="main-menu__link">Pets</a>
@@ -50,47 +46,56 @@
     </nav>
     <hr>
 
-    <!-- the main content is built by 3 sections, each one contains a title that describes -->
     <main class="main-content">
         <section class="about-section" id="about-me">
-            <h2 class="about-section__title">About me</h2>
-            <p class="about-section__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod porro
-                accusantium libero, quas laudantium sed voluptatibus vitae, eveniet dolorum eum fugiat voluptatum
-                perferendis aliquid nulla esse distinctio eos labore molestiae.
-                Dolor exercitationem odio dolorem rem est velit cumque, amet aliquid facilis id placeat accusamus quos
-                dolorum ratione ea nisi, totam sapiente quae. Tempore iusto perferendis ipsa consequatur debitis,
-                architecto explicabo.
-                Velit eaque dolorem itaque vitae dicta laboriosam libero? Temporibus sint deserunt ducimus fugiat omnis
-                quidem animi ab rem! Minus eos mollitia repellendus ea dignissimos quod cupiditate id excepturi tenetur
-                quos.
-                Inventore maiores deleniti in dicta consequuntur nemo, repellendus ipsam molestiae recusandae cumque
-                odio nesciunt sit ad similique quasi, veritatis libero error debitis placeat maxime? Odio mollitia
-                similique commodi numquam id.</p>
+            <h2 class="about-section__title">Sobre mi</h2>
+            <article class="about-section__description">
+                <p class="about-section__paragragh">
+                    Mi nombre es Emanuel Manotas, tengo 24 años, soy tecnólogo en análisis y desarrollo de software egresado del Servicio
+                    Nacional de Aprendizaje SENA, soy una persona que siempre persiste ante cualquier obstáculo hasta lograr lo que me
+                    propongo,siempre me gusta dar el máximo hasta en el mas mínimo detalle y aprender de mis errores
+                </p>
+
+                <p class="about-section__paragragh">
+                    me apasiona tanto el mundo de la programación que constantemente estoy buscando desafíos que estén mas allá de mis
+                    capacidades, buscando ampliar mis habilidades y conocimientos, así como en cualquier ámbito que lo requiera, sobre todo
+                    cuando está en mis intereses, esto junto a mi capacidad de persistencia y adaptabilidad me hace una persona capaz de
+                    resolver problemas
+                </p>
+
+                <p class="about-section__paragragh">
+                    mi meta para este año es poder empezar mi carrera como desarrollador web front-end junior, sin embargo, estoy abierto a
+                    cualquier oportunidad, ya que me apasiona el desarrollo de software a nivel general.
+                </p>
+            </article> 
         </section>
 
         <section class="projects-section" id="projects">
-            <h2 class="projects-section__title">Projects</h2>
+            <h2 class="projects-section__title">Mis proyectos</h2>
             <div class="projects-section__container">
                 <article class="projects-section__card">
-                    <img src="" alt="project image" class="projects-section__img">
+                    <img src="./public/images/sale-image.png" alt="sales simulator image" class="projects-section__img">
 
                     <div class="projects-section__div">
-                        <p class="projects-section__description">descripcion del proyecto</p>
-                        <a href="#" class="projects-section__link"></a>
+                        <h4 class="projects-section__title-card">Sistema de simulación de ventas</h4>
+                        <p class="projects-section__description">Programa de consola que permite simular ventas ingresando sus respectivos datos</p>
+                        <a href="https://github.com/Emanuel1102/ModuloDeVentasRiwiTechStore.git" target="_blank" class="projects-section__link"></a>
                     </div>
                 </article>
                 <article class="projects-section__card">
-                    <img src="" alt="project image" class="projects-section__img">
+                    <img src="./public/images/inentory-system-image.png" alt="project image" class="projects-section__img">
                     <div class="projects-section__div">
-                        <p class="projects-section__description">descripcion del proyecto</p>
-                        <a href="#" class="projects-section__link"></a>
+                        <h4 class="projects-section__title-card">Sistema de inventario</h4>
+                        <p class="projects-section__description">Crud en consola con persistencia de datos en archivos csv</p>
+                        <a href="https://github.com/Emanuel1102/AplicacionInventario.git" target="_blank" class="projects-section__link"></a>
                     </div>
                 </article>
                 <article class="projects-section__card">
-                    <img src="" alt="project image" class="projects-section__img">
+                    <img src="./public/images/student-management-image.png" alt="project image" class="projects-section__img">
                     <div class="projects-section__div">
-                        <p class="projects-section__description">descripcion del proyecto</p>
-                        <a href="#" class="projects-section__link"></a>
+                        <h4 class="projects-section__title-card">Sistema de gestión de estudiantes</h4>
+                        <p class="projects-section__description">Crud en consola que permite gestionar estudiantes</p>
+                        <a href="https://github.com/Emanuel1102/StudentManagementSystem.git" target="_blank" class="projects-section__link"></a>
                     </div>
                 </article>
             </div>
@@ -98,10 +103,9 @@
     </main>
     <hr>
 
-    <!-- the footer contains a contact -->
     <footer class="footer">
         <section class="contact-section" id="contact">
-            <h2 class="contact-section__title">Contact</h2>
+            <h2 class="contact-section__title">Contacto</h2>
             <form action="./" class="contact-form">
                 <input required placeholder="Tu nombre" type="text" id="name" class="contact-form__input">
 

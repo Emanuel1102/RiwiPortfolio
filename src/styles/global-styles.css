@@ -33,12 +33,12 @@ hr{
     margin: 0 auto;
 }
 
-[class*=title]:not(.header__title){
+[class*=title]:not(.header__title, .projects-section__title-card){
     color: var(--tertiary-color);
     margin-bottom: .5em;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 850px){
     :root{
         font-size: 1.1em;
     }

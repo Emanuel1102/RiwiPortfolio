@@ -1,5 +1,9 @@
 /* ---------------------bar styles--------------------------- */
 
+:root{
+    --height-bar: 8em;
+}
+
 .main-bar{
     height: var(--height-bar);
     padding: 1em;
@@ -101,6 +105,11 @@
 }
 
 @media (max-width: 850px){
+
+    :root{
+        --height-bar: 4em;
+    }
+    
     .main-menu{
         background-color: var(--interaction-color);
         border-radius: var(--radius);

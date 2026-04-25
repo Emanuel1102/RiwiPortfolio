@@ -8,11 +8,6 @@
 
 @import url(footer-index.css);
 
-
-:root{
-    --height-bar: 8em;
-}
-
 html{
     scroll-behavior: smooth;
 }

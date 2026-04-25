@@ -6,25 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a page practice to have a bases to create my portfolio">
     <link rel="stylesheet" href="src/styles/index.css">
-    <title>Portfolio</title>
+    <title>Emanuel Manotas</title>
 </head>
 
 <body>
+    <!-- Main header section -->
     <header class="header">
+        <!-- Social icons container-->
         <div class="header__container-icons">
             <a href="https://github.com/Emanuel1102" target="_blank" class="header__link header__link--github">
                 <img src="/public/icons/github-icon.svg" alt="Github icon">
             </a>
         </div>
+
+        <!-- Intro text -->
         <div class="header__container">
             <span>Hola, mi nombre es</span>
             <h1 class="header__title">Emanuel Manotas</h1>
         </div>
     </header>
+
+    <!-- Main navigation bar -->
     <nav class="main-bar">
+
+        <!-- Logo/Branding container -->
         <div class="main-bar__container">
-            <img src="/public/images/image.png" alt="beast mode" class="main-bar__image">
+            <img src="/public/images/image.png" alt="beast mode" title="Solo es una imagen" class="main-bar__image">
         </div>        
+        <!-- Navigation links list -->
         <ul class="main-menu">
             <li class="main-menu__item">
                 <a href="#" class="main-menu__link">Inicio</a>
@@ -42,11 +51,14 @@
                 <a href="/src/views/pets.html" class="main-menu__link">Pets</a>
             </li>
         </ul>
+        <!-- Mobile menu toggle button -->
         <button id="menu-toggle">☰</button>
     </nav>
     <hr>
 
+    <!-- Main content wrapper -->
     <main class="main-content">
+        <!-- About Me section: Personal introduction and goals -->
         <section class="about-section" id="about-me">
             <h2 class="about-section__title">Sobre mi</h2>
             <article class="about-section__description">
@@ -70,9 +82,11 @@
             </article> 
         </section>
 
+        <!-- Projects section: Grid/List of portfolio works -->
         <section class="projects-section" id="projects">
             <h2 class="projects-section__title">Mis proyectos</h2>
             <div class="projects-section__container">
+                <!-- Project Card: Sales Simulator -->
                 <article class="projects-section__card">
                     <img src="./public/images/sale-image.png" alt="sales simulator image" class="projects-section__img">
 
@@ -82,6 +96,7 @@
                         <a href="https://github.com/Emanuel1102/ModuloDeVentasRiwiTechStore.git" target="_blank" class="projects-section__link"></a>
                     </div>
                 </article>
+                <!-- Project Card: Inventory System -->
                 <article class="projects-section__card">
                     <img src="./public/images/inentory-system-image.png" alt="project image" class="projects-section__img">
                     <div class="projects-section__div">
@@ -90,6 +105,7 @@
                         <a href="https://github.com/Emanuel1102/AplicacionInventario.git" target="_blank" class="projects-section__link"></a>
                     </div>
                 </article>
+                <!-- Project Card: Student Management -->
                 <article class="projects-section__card">
                     <img src="./public/images/student-management-image.png" alt="project image" class="projects-section__img">
                     <div class="projects-section__div">
@@ -103,21 +119,30 @@
     </main>
     <hr>
 
+    <!-- Footer containing the Contact section -->
     <footer class="footer">
+        <!-- Contact section with form -->
         <section class="contact-section" id="contact">
             <h2 class="contact-section__title">Contacto</h2>
+            <!-- Contact form for user messages -->
             <form action="./" class="contact-form">
+
+                <!-- Name input field -->
                 <input required placeholder="Tu nombre" type="text" id="name" class="contact-form__input">
 
+                <!-- Email input field -->
                 <input required placeholder="Tu correo" type="email" id="email" class="contact-form__input">
 
+                <!-- Message textarea -->
                 <textarea required placeholder="Escribe un mensaje" id="message" class="contact-form__input"></textarea>
 
+                <!-- Submit button -->
                 <button class="contact-form__input contact-form__input--submit" type="submit">Enviar</button>
             </form>            
         </section>
     </footer>
 
+    <!-- Core logic script -->
     <script src="./src/scripts/nav.js"></script>
 </body>
 

@@ -1,20 +1,20 @@
+/* Import of all modular style components */
 @import url(global-styles.css);
-
 @import url(header-index.css);
-
 @import url(nav-index.css);
-
 @import url(main-index.css);
-
 @import url(footer-index.css);
 
+/* Smooth scroll for internal navigation links */
 html{
     scroll-behavior: smooth;
 }
 
-
 /* --------------------- section styles--------------------------- */
-
+/* 
+   Dynamic selector for all sections (ending in 'section').
+   Includes spacing and scroll-offset adjustment for the sticky navbar.
+*/
 [class$='section']{
     display: flex;
     flex-direction: column;

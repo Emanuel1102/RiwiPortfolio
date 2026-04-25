@@ -1,15 +1,15 @@
+/* Local variables for project card dimensions */
 :root{
     --width-card: 18em;
     --height-card: 18em;
 }
 
-
+/* Vertical spacing for the main content */
 .main-content{
     margin: 1em 0;
 }
 
-
-
+/* About Me layout - Stacked paragraphs */
 .about-section__description{
     display: flex;
     gap: 1em;
@@ -17,7 +17,7 @@
     padding: 0 1em;
 }
 
-
+/* Responsive grid for project cards using auto-fit */
 .projects-section__container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--width-card), 1fr));
@@ -26,6 +26,7 @@
     gap: 2em;
 }
 
+/* Individual project card styling */
 .projects-section__card{
     background-color: var(--interaction-color);
     box-shadow: inset 0 0 5em var(--primary-color);
@@ -35,7 +36,6 @@
     width:  var(--width-card);
     min-height: var(--height-card);
     text-align: center;
-    text-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -44,6 +44,7 @@
     transition: var(--transition);
 }
 
+/* Hover effects: lift card and update shadows */
 .projects-section__card:hover{
     box-shadow: inset 0 0 1em var(--primary-color), var(--box-shadow);
     transition: var(--transition);
@@ -56,12 +57,14 @@
     }
 }
 
+/* Project image constraints */
 .projects-section__img{
     border-radius: var(--radius);
     max-width: 90%;
     max-height: 50%;
 }
 
+/* Text container within the card */
 .projects-section__div{
     display: flex;
     flex-direction: column;
@@ -70,7 +73,6 @@
 
 .projects-section__title-card{
     color: var(--secondary-color);
-    /* text-shadow: 0 0 5px var(--primary-color); */
     font-size: 1.5em;
 }
 
@@ -80,7 +82,7 @@
     font-weight: bold;
 }
 
-
+/* Invisible overlay link to make the whole card clickable */
 .projects-section__link{
     position: absolute;
     inset: 0;

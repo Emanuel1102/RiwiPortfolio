@@ -1,4 +1,5 @@
 
+/* Header main container - Fullscreen layout with background image */
 .header{
     display: flex;
     flex-direction: column;
@@ -13,13 +14,14 @@
     background-attachment: fixed;
 }
 
-
+/* Main title styling with glow effect */
 .header__title{
     font-size: 5rem;
     text-shadow: 0 0 10px var(--primary-color);
     color: var(--secondary-color);
 }
 
+/* Centered content wrapper */
 .header__container {
     display: flex;
     flex-direction: column;
@@ -28,18 +30,21 @@
     flex-grow: 1;
 }
 
+/* Intro text styling */
 .header__container span{
     text-shadow: 0 0 10px var(--primary-color);
     font-weight: bolder;
     font-size: 2.5em;
 }
 
+/* Social icons layout */
 .header__container-icons{
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
 }
 
+/* Social links sizing and hover effects */
 .header__link{
     --dimensions: 4.5em;
     height: var(--dimensions);
@@ -53,6 +58,7 @@
     color: var(--secondary-color);
 }
 
+/* Responsive adjustments for tablets and mobile */
 @media (max-width: 850px){
     .header__title{
         font-size: 3em;

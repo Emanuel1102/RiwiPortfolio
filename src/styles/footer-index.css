@@ -1,12 +1,14 @@
-
+/* Footer main container spacing */
 .footer{
     padding: 1em;
 }
 
+/* Center-aligned section title */
 .contact-section__title{
     text-align: center;
 }
 
+/* Flexbox layout for the contact form */
 .contact-form{
     display: flex;
     flex-direction: column;
@@ -16,10 +18,12 @@
     padding: .5em;
 }
 
+/* Default width for text inputs (Desktop) */
 .contact-form__input:not(.contact-form__input--submit){
     width: 30%;
 }
 
+/* Base styles for all form inputs */
 .contact-form__input{
     text-align: center;
     padding: 1em;
@@ -30,6 +34,7 @@
     border-radius: var(--radius);
 }
 
+/* Interactive states: Focus for inputs and Hover for submit button */
 .contact-form__input:focus, .contact-form__input--submit:hover{
     box-shadow: var(--box-shadow);
     background-color: var(--interaction-color);
@@ -39,12 +44,14 @@
     transform: translateY(-5px) 
 }
 
+/* Styling for placeholder text using custom shadows */
 .contact-form__input::placeholder{
     color: var(--primary-color);
     text-shadow: 1px 1px 1px var(--secondary-color);
     font-weight: bolder;
 }
 
+/* Submit button specific styles */
 .contact-form__input--submit{
     color: var(--primary-color);
     cursor: pointer;
@@ -52,12 +59,14 @@
 
 }
 
+/* Textarea specific constraints and scrollbar styling */
 #message{
     height: 10em;
     resize: none;
     scrollbar-color: var(--secondary-color) transparent;
 }
 
+/* Responsive adjustments: Increase input width on smaller screens */
 @media (max-width: 950px){
     .contact-form__input:not(.contact-form__input--submit){
         width: 80%;
